@@ -4,9 +4,9 @@
       admin:
         one: Administrador
         other: Administradores
-      profile:
-        one: Perfil
-        other: Perfis
+      user:
+        one: Usuario
+        other: Usuarios
       attributes:
         id: Codigo
         email: Email
