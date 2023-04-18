@@ -1,4 +1,4 @@
-class UsersBackoffice::WelcomeController < UsersBackoffice
+class UsersBackoffice::WelcomeController < UsersBackofficeController
     def index
     end
 end
