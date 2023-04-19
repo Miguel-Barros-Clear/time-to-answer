@@ -2,13 +2,13 @@
 <p>Find me in app/views/site/welcome/index.html.erb</p>
 
 <% if user_signed_in? %>
-    <p>Usuario ESTA logado / <%= current_user.email %></p>
-    <% else %>
-    <p>Usuario NAO ESTA logado</p>
+  <p>Usuário ESTÁ logado / <%= current_user.email %> </p>
+<% else %>
+  <p>Usuário NÃO está logado</p>
 <% end %>
 
-<% if user_signed_in? %>
-        <p>Administrador ESTA logado / <%= current_admin.email %></p>
-    <% else %>
-        <p>Administrador NAO ESTA logado</p>
+<% if admin_signed_in? %>
+  <p>Administrador ESTÁ logado / <%= current_admin.email %> </p>
+<% else %>
+  <p>Administrador NÃO está logado</p>
 <% end %>
