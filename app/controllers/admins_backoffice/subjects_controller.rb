@@ -1,8 +1,8 @@
-class AdminsBackoffice::SubjectsController < ApplicationController
+class AdminsBackoffice::SubjectsController < AdminsBackofficeController
   before_action :set_subject, only: [:edit, :update, :destroy]
 
   def index
-    @subjects = Subject.all.page(params[:page])
+    @subjects = Subject.all.order(:description).page(params[:page])
   end
 
   def new
@@ -41,7 +41,7 @@ class AdminsBackoffice::SubjectsController < ApplicationController
   private
 
   def params_subject
-    params.require(:admin).permit(:description)
+    params.require(:subject).permit(:description)
   end
 
   def set_subject
