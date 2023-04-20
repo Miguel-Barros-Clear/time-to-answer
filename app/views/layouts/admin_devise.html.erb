@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+      
+    <title>TimeToAnswer</title>
+
+    <%= stylesheet_link_tag    'application' %>
+    <%= stylesheet_link_tag    'admin_devise' %>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <%= yield %>
+    </div>
+
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'admin_devise' %>
+
+    <% if flash %>
+        <% flash.each do |key, value| %>
+            <%= javascript_tag do %>
+                $.bootstrapGrowl('<%= value %>', {
+                    type: 'success',
+                    align: 'right',
+                    allow_dismiss: true,
+                    stackup_spacing: 10
+                })
+            <% end %>
+        <% end %>
+    <% end %>
+</body>
+</html>

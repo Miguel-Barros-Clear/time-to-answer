@@ -19,6 +19,8 @@ Rails.application.config.assets.precompile += %w(
                                                     admins_backoffice.css
                                                     users_backoffice.js
                                                     users_backoffice.css
+                                                    admin_devise.css
+                                                    admin_devise.js
                                                     custom.js
                                                     custom.css
                                                 )
@@ -26,6 +28,8 @@ Rails.application.config.assets.precompile += %w(
 # /lib/assets
 Rails.application.config.assets.precompile += %w( 
                                                     sb-admin-2.js 
+                                                    admin_devise.css
+                                                    admin_devise.js
                                                     sb-admin-2.css
                                                     custom.js
                                                     custom.css
