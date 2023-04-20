@@ -4,8 +4,8 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Assunto</th>
-                <th>Descrição</th>
+                <th><%= traslate_attribute(@questions, :subject) %></th>
+                <th><%= traslate_attribute(@questions, :description) %></th>
                 <th>
                     <%= link_to new_admins_backoffice_question_path, class:"btn btn-success btn-circle" do %>
                         <i class="fa fa-plus"></i>
