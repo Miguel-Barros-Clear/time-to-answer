@@ -1,0 +1,15 @@
+'pt-BR':
+  messages:
+    listing:
+      admin:
+        one: Administrador
+        other: Administradores
+      user:
+        one: Usuario
+        other: Usuarios
+      subject:
+        one: Assunto
+        other: Assuntos
+      question:
+        one: Questão
+        other: Questões
