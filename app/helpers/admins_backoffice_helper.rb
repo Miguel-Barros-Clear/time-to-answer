@@ -1,6 +1,6 @@
 module AdminsBackofficeHelper
 
-    def traslate_attribute(object = nil, attribute = nil)
+    def translate_attribute(object = nil, attribute = nil)
         if attribute && object
             object.model.human_attribute_name(attribute)
         else
