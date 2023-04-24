@@ -23,6 +23,8 @@ Rails.application.config.assets.precompile += %w(
                                                     admin_devise.js
                                                     custom.js
                                                     custom.css
+                                                    user_devise.css
+                                                    user_devise.js
                                                 )
 
 # /lib/assets
@@ -34,6 +36,8 @@ Rails.application.config.assets.precompile += %w(
                                                     custom.js
                                                     custom.css
                                                     img.jpg
+                                                    user_devise.css
+                                                    user_devise.js
                                                 )
 
 # /render/assets

@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>TimeToAnswer</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application' %>
-    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag    'user_devise' %>
   </head>
 
-  <body>
-    <h1>Layout user devise</h1>
+  <body class="login">
     <%= yield %>
+
+
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'user_devise' %>
+
+    <% if flash %>
+        <% flash.each do |key, value| %>
+            <%= javascript_tag do %>
+                $.bootstrapGrowl('<%= value %>', {
+                    type: 'success',
+                    align: 'right',
+                    allow_dismiss: true,
+                    stackup_spacing: 10
+                })
+            <% end %>
+        <% end %>
+    <% end %>
   </body>
 </html>
