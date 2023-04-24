@@ -25,6 +25,10 @@ Rails.application.config.assets.precompile += %w(
                                                     custom.css
                                                     user_devise.css
                                                     user_devise.js
+                                                    surface-fix.css
+                                                    surface-fix.js
+                                                    site.css
+                                                    site.js
                                                 )
 
 # /lib/assets
@@ -38,6 +42,10 @@ Rails.application.config.assets.precompile += %w(
                                                     img.jpg
                                                     user_devise.css
                                                     user_devise.js
+                                                    surface-fix.css
+                                                    surface-fix.js
+                                                    site.css
+                                                    site.js
                                                 )
 
 # /render/assets
